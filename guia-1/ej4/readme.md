@@ -7,6 +7,7 @@ b) El promedio de los valores positivos menores que R.
 c) El porcentaje de valores positivos pares.
 
 ## Análisis del problema (Top-Down)
+
 1. Lectura de datos  
    1.1 Leer el valor de R.  
    1.2 Leer el valor de N (cantidad de números a ingresar, máximo 100).  
