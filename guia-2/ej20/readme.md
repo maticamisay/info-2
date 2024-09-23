@@ -1,22 +1,18 @@
-# Problema: Procesar pares de valores enteros (x, y) hasta que se cumpla una condición de parada
+# Problema: Simular tiradas de una moneda y calcular los resultados
 
 1. Lectura de datos  
-   1.1 Leer dos valores enteros x e y.  
-   1.2 Repetir el proceso hasta que la diferencia entre ambos sea impar y divisible por 7.  
-       1.2.1 Calcular la diferencia entre x e y, verificar si la diferencia es impar y divisible por 7.  
-       1.2.2 Si la condición se cumple, finalizar el ciclo.
+   1.1 Leer la cantidad de tiradas de la moneda que se desea realizar.
 
-2. Procesamiento de datos  
-   2.1 Para cada par (x, y):  
-       2.1.1 **Si y > x**: Mostrar los valores intermedios entre x e y (exclusivos).  
-       2.1.2 **Si y > 0**: Calcular x elevado a y mediante productos sucesivos y mostrar el resultado en `main()`.  
-       2.1.3 **Si x > 0**: Acumular los valores de x para calcular el promedio más tarde.  
-       2.1.4 Verificar si alguno de los valores es 0 y contar el par si al menos uno es 0.  
+2. Simulación de las tiradas  
+   2.1 Repetir el proceso de tirada de moneda el número de veces especificado.  
+       2.1.1 Generar un valor aleatorio para determinar si sale "Cara" o "Cruz".  
+       2.1.2 Si el valor es "Cara", aumentar el contador de "Cara".  
+       2.1.3 Si el valor es "Cruz", aumentar el contador de "Cruz".
 
 3. Cálculos finales  
-   3.1 Calcular el promedio de los valores de x mayores que 0.  
-   3.2 Calcular el porcentaje de pares con al menos un valor igual a 0.
+   3.1 Calcular el porcentaje de veces que salió "Cara".  
+   3.2 Calcular el porcentaje de veces que salió "Cruz".
 
-4. Mostrar resultados finales  
-   4.1 Imprimir el promedio de los valores de x mayores que 0.  
-   4.2 Imprimir el porcentaje de pares con al menos un valor igual a 0.
+4. Mostrar resultados  
+   4.1 Imprimir la cantidad de veces que salió "Cara" y "Cruz".  
+   4.2 Imprimir el porcentaje de veces que salió "Cara" y "Cruz".
