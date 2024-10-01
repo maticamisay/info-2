@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "Ejecutar mi aplicación GTK",
+          "type": "cppdbg",
+          "request": "launch",
+          "program": "${workspaceFolder}/mi_app_basica",  // Ruta al ejecutable generado
+          "args": [],
+          "stopAtEntry": false,
+          "cwd": "${workspaceFolder}",
+          "environment": [],
+          "externalConsole": false,  // Se puede usar la consola interna
+          "MIMode": "gdb",
+          "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",  // Ruta al depurador GDB de MSYS2
+          "setupCommands": [
+              {
+                  "description": "Habilitar el formato Pretty-Printing en GDB",
+                  "text": "-enable-pretty-printing",
+                  "ignoreFailures": true
+              }
+          ],
+          "preLaunchTask": "Compilar con GTK",
+          "internalConsoleOptions": "openOnSessionStart",
+          "linux": {
+              "MIMode": "gdb"
+          },
+          "windows": {
+              "MIMode": "gdb"
+          }
+      }
+  ]
+}
